@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+#main-container {
+  position:relative;
+}
+
+.lokal-login-bg img{
+  height: 100vh;
+  width: 100%;
+}
+
+.login-form-wrapper {
+  border: transparent;
+  box-shadow: 5px 5px 40px 15px rgba(0,0,0,0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 30px 50px;
+  background: rgba(0,0,0,0.6)
+}
+
+.lokal-logo img{
+  width: 18vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.fb-login-button {
+  padding-top: 30px;
+}

@@ -45,10 +45,6 @@ class RegistrationTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
-
-        $validator
             ->scalar('BusinessName')
             ->maxLength('BusinessName', 255)
             ->requirePresence('BusinessName', 'create')
@@ -84,7 +80,8 @@ class RegistrationTable extends Table
             ->notEmpty('Website');
 
         $validator
-            ->integer('FacebookPage')
+            ->scalar('FacebookPage')
+            ->maxLength('FacebookPage', 255)
             ->requirePresence('FacebookPage', 'create')
             ->notEmpty('FacebookPage');
 
