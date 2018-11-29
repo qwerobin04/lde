@@ -1,3 +1,7 @@
+<?php
+include 'C:xampp/htdocs/lde/src/controller/LoginController.php';
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -5,6 +9,7 @@
     <meta charset="utf-8">
     <title>Lokal Delivery Express</title>
     <link rel="stylesheet" href="webroot/css/login.css">
+
 </head>
 
 <body>
@@ -16,12 +21,18 @@
             <div class="lokal-logo ">
                 <img src="webroot/img/lokal-logo-white.png " alt=" ">
             </div>
-            <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true"></div>
+            <div  class="fb-login-button"  class="fb()" value="fbLogin"   data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true"></div>
+<form class="" action = "fb()" method="post">
+  <button onclick="fb()"> </button> 
         </div>
     </div>
     <!-- <div id="fb-root"></div> -->
 </body>
+
+
+
 <script>
+
     window.fbAsyncInit = function() {
         FB.init({
             appId: '{200216560868481}',
@@ -77,5 +88,6 @@
         });
     }
 </script>
+
 
 </html>
